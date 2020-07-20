@@ -22,13 +22,13 @@
     echo "<br>";
 
     $fight = new Fight();
-    echo $fight->diSerang($elang, $harimau);
+    echo $fight->serang($elang, $harimau);
 
 
     echo "<br>";
     echo "<br>";
 
     $fight_2 = new Fight();
-    echo $fight_2->diSerang($harimau_3, $elang);
+    echo $fight_2->serang($harimau_3, $elang);
 
 ?>
