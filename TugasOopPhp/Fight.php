@@ -10,7 +10,7 @@
         {
             echo $hewan_1->nama ." sedang diserang ";
             echo "<br>";
-            echo " darah sekarang tersisa= ".($hewan_1->darah-($hewan_1->darah-$hewan_2->attackPower)/$hewan_1->defencePower);
+            echo " darah berkurang = ". ($hewan_1->darah-$hewan_2->attackPower/$hewan_1->defencePower);
         }
     } 
    

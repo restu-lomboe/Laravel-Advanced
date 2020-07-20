@@ -9,12 +9,13 @@
         
         public $keahlian = 'lari cepat';
         public $jumlahKaki = '4';
-        public $attackPower  = '7';
-        public $defencePower  = '8';
+        public $attackPower  = 7;
+        public $defencePower  = 8;
         // 
         public function getInfoHewan($hewan)
         {
             echo "<br> Nama Hewan : " .$hewan->nama. ", ";
+            echo "Banyak darah : " .$hewan->darah. ", ";
             echo "Keahlian : " .$this->keahlian. ", ";
             echo "Jumlah Kaki : " .$this->jumlahKaki. ", ";
             echo "Attack Power : " .$this->attackPower. ", ";
