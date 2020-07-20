@@ -8,9 +8,9 @@
         }
         public function diSerang($hewan_1, $hewan_2)
         {
-            echo $hewan_1->nama ." sedang diserang " . $hewan_2->nama. ",";
+            echo $hewan_1->nama ." sedang diserang ";
             echo "<br>";
-            echo $hewan_1->nama. " darah sekarang = ".($hewan_1->darah-($hewan_1->darah-$hewan_2->attackPower)/$hewan_1->defencePower);
+            echo " darah sekarang tersisa= ".($hewan_1->darah-($hewan_1->darah-$hewan_2->attackPower)/$hewan_1->defencePower);
         }
     } 
    

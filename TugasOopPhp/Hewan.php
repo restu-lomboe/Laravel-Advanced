@@ -8,14 +8,12 @@
 
         public function __construct($nama)
         {
-            echo "Nama Hewan: " .$this->nama = $nama;
-            echo "<br>";
-            echo "Darah Default: " .$this->darah;
+            $this->nama = $nama;
         }
 
         public function atraksi($keahlian)
         {  
-            echo "<br>" .$this->nama. " sedang " . $this->keahlian = $keahlian;
+            echo $this->nama. " sedang " . $this->keahlian = $keahlian;
         }
     } 
 

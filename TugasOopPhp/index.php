@@ -3,24 +3,32 @@
     require "Elang.php";
     require "Fight.php";
 
-    $harimau = new Harimau('harimau_1');
+    $elang = new Elang('elang_1');
+    echo $elang->atraksi('terbang tinggi');
+    echo $elang->getInfoHewan($elang);
+
+    echo "<br>";
+    echo "<br>";
+
+    $harimau = new Harimau('harimau_2');
     // echo $harimau->darah;
     echo $harimau->atraksi('lari cepat');
-    echo $harimau->getInfoHewan();
+    echo $harimau->getInfoHewan($harimau);
+
+    $harimau_3 = new Harimau('harimau_3');
     // echo $hewan->serang('elang');
 
     echo "<br>";
     echo "<br>";
 
-    $elang = new Elang('elang_1');
-    echo $elang->atraksi('terbang tinggi');
-    echo $elang->getInfoHewan();
-
-    echo "<br>";
-    echo "<br>";
-
     $fight = new Fight();
-    echo $fight->serang($harimau, $elang);
+    echo $fight->diSerang($elang, $harimau);
+
+
     echo "<br>";
-    echo $fight->diSerang($harimau, $elang);
+    echo "<br>";
+
+    $fight_2 = new Fight();
+    echo $fight_2->diSerang($harimau_3, $elang);
+
 ?>
